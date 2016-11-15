@@ -34,11 +34,11 @@ npm install signalk-raymarine-autopilot
 npm install signalk-fusion-stereo
 ```
 
-Now start your server and go to http://localhost:3000/plugins/configure.
+Now start your server and go to <http://localhost:3000/plugins/configure>.
 Activate the "Edit Zones", "Raymarine Autopilot" and "Fusion Stereo" plugins.
 
 For the autopilot and fusion plugins, you need to find the N2K device ids for those devices.
-Hit the rest api for your server at http://localhost:3000/signalk/v1/api/vessels/self. You can do this in a browser, using curl or by looking at the "Log" in WilhelmSK.
+Hit the rest api for your server at <http://localhost:3000/signalk/v1/api/vessels/self>. You can do this in a browser, using curl or by looking at the "Log" in WilhelmSK.
 
 You're looking for a piece of data in SignalK that comes from the device. For example, I know that pitch, raw and roll come from the Raymarine Course Computer:
 
@@ -68,9 +68,9 @@ You do not want to enable this plugin until your ready to set the anchor alarm. 
 
 
 #Links
-[signalk-anchoralarm-plugin git](https://github.com/sbender9/signalk-anchoralarm-plugin)
-[signalk-raymarine-autopilot' git](https://github.com/sbender9/signalk-raymarine-autopilot)
-[signalk-fusion-stereo git](https://github.com/sbender9/signalk-fusion-stereo)
-[SignalK.org](http://www.signalk.org)
+* [signalk-anchoralarm-plugin git](https://github.com/sbender9/signalk-anchoralarm-plugin)
+* [signalk-raymarine-autopilot' git](https://github.com/sbender9/signalk-raymarine-autopilot)
+* [signalk-fusion-stereo git](https://github.com/sbender9/signalk-fusion-stereo)
+* [SignalK.org](http://www.signalk.org)
 
 
