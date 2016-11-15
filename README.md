@@ -56,7 +56,7 @@ You're looking for a piece of data in SignalK that comes from the device. For ex
 
 It's the '"$source": "actisense.204"' entry that's important. In this case, the device id is 204. Enter this for "Autopilot N2K Device ID" in the plugin configuration screen and hit Submit.
 
-Optionally you can install the anchor alarm plugin:
+#Optionally install the anchor alarm plugin:
 
 ```
 npm install signalk-anchoralarm-plugin
