@@ -62,7 +62,7 @@ Optionally you can install the anchor alarm plugin:
 npm install signalk-anchoralarm-plugin
 ```
 
-You do not want to enable this plugin until your ready to set the anchor alarm. This can be by activating the plugin via the configuration url above or in WilhelmSK via the anchor icon on the top left of your Gauges or via the checkbox under the "Notifications" settings menu item.
+You do not want to enable this plugin until your ready to set the anchor alarm. This can be done by activating the plugin via the configuration url above or in WilhelmSK via the anchor icon on the top left of your Gauges or via the checkbox under the "Notifications" settings menu item.
 
 ***Please note that this gives anyone with access to your boat network and the signalk-node-server the ability to steer your boat. To be safe you can 'npm uninstall signalk-raymarine-autopilot' when not in use. Security and Authentication is coming soon to node server***
 
