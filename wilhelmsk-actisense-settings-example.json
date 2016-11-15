@@ -1,0 +1,34 @@
+{
+  "vessel": {
+    "name"  : "YourBoat",
+    "brand" : "Catalina",
+    "type"  : "30 Tall Rig",
+    "uuid"  : "urn:mrn:signalk:uuid:cb5sd73-2a9f-4119-a816-44e59eb97696",
+    "mmsi"  : "000000000",
+    "flag"  : "USA",
+    "port"  : "YourTown, State"
+  },
+  
+  "pipedProviders": [{
+    "id": "actisense",
+    "pipeElements": [{
+      "type": "providers/execute",
+      "options": {
+        "command": "actisense-serial /dev/ttyUSB0",
+	"toChildProcess": "nmea2000out"
+      }
+    }, {
+      "type": "providers/liner"
+    }, {
+      "type": "providers/n2kAnalyzer"
+    }, {
+      "type": "providers/n2k-signalk"
+    }]
+  }
+ ],
+  "interfaces": {
+    "bower": true,
+    "rest": true,
+    "ws": true
+  }
+}
