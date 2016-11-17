@@ -4,7 +4,7 @@ Examples and Instructions to setup signalk-node-server to support all of the Wil
 
 First you'll  want to make sure you have the latest and greatest [signalk-server-node](https://github.com/SignalK/signalk-server-node) installed. Please see instructions there for initial install.
 
-You will also need to have the latest and createst canboat "analyzer" from https://github.com/canboat/canboat
+You will also need to have the latest and greatest canboat "analyzer" from https://github.com/canboat/canboat
 
 You'll probably want to install mdns so that WilhelmSK can discover your boat:
 
