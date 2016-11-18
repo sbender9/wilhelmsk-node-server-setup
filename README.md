@@ -33,10 +33,11 @@ cd /usr/local/src/signalk-server-node
 npm install signalk-raymarine-autopilot
 npm install signalk-fusion-stereo
 npm install signalk-push-notifications
+npm install signalk-alarm-silencer
 ```
 
 Now start your server and go to <http://localhost:3000/plugins/configure>.
-Activate the "Edit Zones", "Push Notifications", "Raymarine Autopilot" and "Fusion Stereo" plugins.
+Activate the "Edit Zones", "Push Notifications", "Raymarine Autopilot", "Alarm Silencer" and "Fusion Stereo" plugins.
 
 For the autopilot and fusion plugins, you need to find the N2K device ids for those devices.
 Hit the rest api for your server at <http://localhost:3000/signalk/v1/api/vessels/self>. You can do this in a browser, using curl or by looking at the "Log" in WilhelmSK.
