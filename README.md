@@ -6,12 +6,6 @@ First you'll  want to make sure you have the latest and greatest [signalk-server
 
 You will also need to have the latest and greatest canboat "analyzer" from https://github.com/canboat/canboat
 
-For Fusion stereo, you also need my fork of n2k-signalk.
-
-```
-npm install https://github.com/sbender9/n2k-signalk.git#fusion-stereo-updates
-```
-
 You'll probably want to install mdns so that WilhelmSK can discover your boat:
 
 ```
