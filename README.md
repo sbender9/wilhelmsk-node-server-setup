@@ -36,8 +36,8 @@ signalk-alarm-silencer
 signalk-wilhelmsk-plugin
 ```
 
-Now start your server and go to <http://localhost:3000/plugins/configure>.
-Activate the "Edit Zones", "Push Notifications", "Raymarine Autopilot", "Alarm Silencer" and "Fusion Stereo" plugins.
+Now restart your server and go to <http://localhost:3000/plugins/configure>.
+Activate the "Edit Zones", "Push Notifications", "Raymarine Autopilot", "Alarm Silencer", "Fusion Stereo" and "WilhelmSK" plugins.
 
 For the autopilot and fusion plugins, you need to find the N2K device ids for those devices.
 Hit the rest api for your server at <http://localhost:3000/signalk/v1/api/vessels/self>. You can do this in a browser, using curl or by looking at the "Log" in WilhelmSK.
