@@ -26,14 +26,14 @@ If you want to be able to control a Raymarine Autopilot or Fusion Stereo, you'll
   }
 ```
 
-Next install the node server plugins that you want.
+Next install the node server plugins that you want. Go to <http://localhost:3000/appstore> and install:
 
 ```
-cd /usr/local/src/signalk-server-node
-npm install signalk-raymarine-autopilot
-npm install signalk-fusion-stereo
-npm install signalk-push-notifications
-npm install signalk-alarm-silencer
+signalk-raymarine-autopilot
+signalk-fusion-stereo
+signalk-push-notifications
+signalk-alarm-silencer
+signalk-wilhelmsk-plugin
 ```
 
 Now start your server and go to <http://localhost:3000/plugins/configure>.
@@ -58,13 +58,12 @@ You're looking for a piece of data in SignalK that comes from the device. For ex
 
 It's the '"$source": "actisense.204"' entry that's important. In this case, the device id is 204. Enter this for "Autopilot N2K Device ID" in the plugin configuration screen and hit Submit.
 
-#Optionally install the anchor alarm plugin:
+#Optionally install the anchor alarm plugin via the app store:
 
 ```
-npm install signalk-anchoralarm-plugin
+signalk-anchoralarm-plugin
 ```
 
-You do not want to enable this plugin until your ready to set the anchor alarm. This can be done by activating the plugin via the configuration url above or in WilhelmSK via the anchor icon on the top left of your Gauges or via the checkbox under the "Notifications" settings menu item.
 
 ***Please note that this gives anyone with access to your boat network and the signalk-node-server the ability to steer your boat. To be safe you can 'npm uninstall signalk-raymarine-autopilot' when not in use. Security and Authentication is coming soon to node server***
 
