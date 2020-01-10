@@ -3,27 +3,6 @@ Examples and Instructions to setup signalk-node-server to support all of the Wil
 
 
 First you'll  want to make sure you have the latest and greatest [signalk-server-node](https://github.com/SignalK/signalk-server-node) installed. Please see instructions there for initial install.
-
-You will also need to have the latest and greatest canboat "analyzer" from https://github.com/canboat/canboat
-
-You'll probably want to install mdns so that WilhelmSK can discover your boat:
-
-```
-cd /usr/local/src/signalk-server-node
-npm install mdns
-```
-
-If you want to be able to control a Raymarine Autopilot or Fusion Stereo, you'll need to update your node server settings to include config for writing to the N2K bus. For your actisense provider, include the "toChildProcess" option and set it to "nmea2000out".There a full settings example in the repository above.
-
-```
-  "id": "actisense",
-  "pipeElements": [{
-    "type": "providers/execute",
-    "options": {
-      "command": "actisense-serial /dev/ttyUSB0",
-      "toChildProcess": "nmea2000out"
-    }
-  }
 ```
 
 Next install the node server plugins that you want. Go to <http://localhost:3000/appstore> and install:
@@ -63,10 +42,6 @@ It's the '"$source": "actisense.204"' entry that's important. In this case, the 
 ```
 signalk-anchoralarm-plugin
 ```
-
-
-***Please note that this gives anyone with access to your boat network and the signalk-node-server the ability to steer your boat. To be safe you can 'npm uninstall signalk-raymarine-autopilot' when not in use. Security and Authentication is coming soon to node server***
-
 
 #Links
 * [signalk-anchoralarm-plugin git](https://github.com/sbender9/signalk-anchoralarm-plugin)
