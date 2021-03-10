@@ -3,7 +3,7 @@ Examples and Instructions to setup signalk-node-server to support all of the Wil
 
 
 First you'll  want to make sure you have the latest and greatest [signalk-server-node](https://github.com/SignalK/signalk-server-node) installed. Please see instructions there for initial install.
-```
+
 
 Next install the node server plugins that you want. Go to <http://localhost:3000/appstore> and install:
 
